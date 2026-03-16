@@ -2,7 +2,7 @@
 
 # Demo Rick Universe
 
-A demo Universe for [Rick](https://github.com/Sagi363/Rick-POC) — meet the team, run workflows, break things.
+A demo Universe for [Rick](https://github.com/Sagi363/rick-POC) — meet the team, run workflows, break things.
 
 </div>
 
@@ -29,7 +29,7 @@ A demo Universe for [Rick](https://github.com/Sagi363/Rick-POC) — meet the tea
 ### 1. Install Rick
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Sagi363/Rick-POC/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Sagi363/rick-POC/main/install.sh | bash
 ```
 
 ### 2. Join this Universe
@@ -41,15 +41,15 @@ rick add git@github.com:Sagi363/Demo-Rick-Universe.git
 ### 3. Run a workflow
 
 ```
-/Rick run new-feature
+/rick run new-feature
 ```
 
 ### 4. Talk to the agents
 
 ```
-/Rick let Chad introduce himself
-/Rick ask Chaos what he thinks about our error handling
-/Rick have Nitpick review this code
+/rick let Chad introduce himself
+/rick ask Chaos what he thinks about our error handling
+/rick have Nitpick review this code
 ```
 
 ## License
