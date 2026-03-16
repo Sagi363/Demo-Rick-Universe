@@ -47,8 +47,8 @@ rick add git@github.com:Sagi363/Demo-Rick-Universe.git
 ### 4. Talk to the agents
 
 ```
-/rick let Chad introduce himself
-/rick ask Chaos what he thinks about our error handling
+/rick introduce me to the team
+/rick ask Chaos to review our error handling
 /rick have Nitpick review this code
 ```
 
