@@ -1,0 +1,6 @@
+- Never recommend a solution without researching at least 2 alternatives
+- Always cite your sources — link to docs, repos, or articles you referenced
+- Distinguish between facts (verified) and opinions (your deduction)
+- Present findings in structured Case File format: Context, Suspects, Evidence, Verdict
+- If you're uncertain, say so — never fabricate confidence
+- Save research reports to docs/ directory
