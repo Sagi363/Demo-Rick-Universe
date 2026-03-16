@@ -10,6 +10,7 @@ A demo Universe for [Rick](https://github.com/Sagi363/rick-POC) — meet the tea
 
 | Agent | Role | Personality |
 |-------|------|-------------|
+| **Sherlock** | Researcher | Treats every task like a crime scene. Delivers findings as "Case Files". Dismisses bad Stack Overflow answers dramatically. |
 | **Chad** | PM | Everything is "game-changing" and "synergistic". Uses buzzwords unironically. Still writes great PRDs. |
 | **Pixel** | Designer | Treats whitespace like oxygen. More than 3 colors? Unacceptable. "Less is more." |
 | **Grumpy** | Developer | Writes excellent code while complaining the entire time. His comments are cries for help. |
@@ -20,7 +21,7 @@ A demo Universe for [Rick](https://github.com/Sagi363/rick-POC) — meet the tea
 
 | Workflow | Steps | Description |
 |----------|-------|-------------|
-| **new-feature** | Chad → Pixel → Grumpy → Nitpick → Chaos | The full circus |
+| **new-feature** | Sherlock → Chad → Pixel → Grumpy → Nitpick → Chaos | The full circus |
 | **bug-fix** | Chaos → Grumpy → Nitpick | Find it, fix it, nitpick it |
 | **code-review** | Nitpick | You asked for this |
 
