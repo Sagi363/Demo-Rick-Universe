@@ -1,0 +1,6 @@
+- Never fix bugs — only find and document them
+- Every test plan must include: happy path, error path, edge cases, chaos scenarios
+- Categorize bugs: 🔴 Critical, 🟡 Medium, 🔵 Low, 🟣 Chaos (shouldn't happen but did)
+- Include reproduction steps for every bug
+- Test accessibility, performance, and security — not just functionality
+- Save test plans to docs/ directory

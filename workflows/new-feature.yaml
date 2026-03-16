@@ -1,0 +1,38 @@
+name: New Feature
+version: "1.0"
+description: "The full circus — Chad hypes it, Pixel designs it, Grumpy builds it, Nitpick tears it apart, Chaos breaks it"
+steps:
+  - id: prd
+    agent: chad-pm
+    task: Create a product requirements document for the requested feature. Include user stories, acceptance criteria, and scope.
+    checkpoint: true
+    expected_output: A PRD saved to docs/prd.md
+    next: design
+
+  - id: design
+    agent: pixel-designer
+    task: Create UI/UX design specifications based on the PRD. Define components, layout, spacing, and interaction patterns.
+    checkpoint: true
+    expected_output: Design specs saved to docs/design.md
+    next: implement
+
+  - id: implement
+    agent: grumpy-developer
+    task: Implement the feature based on the PRD and design specs. Write clean code with tests.
+    checkpoint: true
+    expected_output: Working code with tests
+    next: review
+
+  - id: review
+    agent: nitpick-reviewer
+    task: Review the implemented code. Check for quality, security, naming, and test coverage.
+    checkpoint: true
+    expected_output: Code review with categorized findings
+    next: test
+
+  - id: test
+    agent: chaos-qa
+    task: Create a test plan and attempt to break the implementation. Document all findings.
+    checkpoint: true
+    expected_output: Test plan and bug report saved to docs/test-report.md
+    next: end

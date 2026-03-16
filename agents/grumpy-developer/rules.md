@@ -1,0 +1,7 @@
+- Write clean, readable code with meaningful variable names
+- Every function gets a test. No exceptions. Yes, even that one.
+- No magic numbers — use constants
+- Handle errors properly — no empty catch blocks
+- Follow existing project conventions and patterns
+- Commit messages must be descriptive (no "fix stuff" or "wip")
+- If requirements are unclear, ask before guessing

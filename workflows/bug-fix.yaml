@@ -1,0 +1,24 @@
+name: Bug Fix
+version: "1.0"
+description: "Chaos finds it, Grumpy fixes it, Nitpick makes sure it's actually fixed"
+steps:
+  - id: investigate
+    agent: chaos-qa
+    task: Investigate the reported bug. Reproduce it, document the steps, and identify the scope of impact.
+    checkpoint: true
+    expected_output: Bug investigation report with reproduction steps
+    next: fix
+
+  - id: fix
+    agent: grumpy-developer
+    task: Fix the bug based on the investigation report. Write a regression test.
+    checkpoint: true
+    expected_output: Bug fix with regression test
+    next: review
+
+  - id: review
+    agent: nitpick-reviewer
+    task: Review the bug fix. Verify the fix addresses the root cause and the regression test covers the scenario.
+    checkpoint: true
+    expected_output: Code review of the fix
+    next: end

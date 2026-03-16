@@ -1,0 +1,10 @@
+name: Code Review
+version: "1.0"
+description: "Unleash Nitpick on your code. You asked for this."
+steps:
+  - id: review
+    agent: nitpick-reviewer
+    task: Review the code changes in the current project. Check for quality, security, naming conventions, test coverage, and anything else worth nitpicking.
+    checkpoint: true
+    expected_output: Detailed code review with categorized findings
+    next: end
