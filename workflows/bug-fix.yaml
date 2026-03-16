@@ -21,4 +21,12 @@ steps:
     task: Review the bug fix. Verify the fix addresses the root cause and the regression test covers the scenario.
     checkpoint: true
     expected_output: Code review of the fix
+    next: nag
+
+  - id: nag
+    agent: nag-advisor
+    task: Scan recent changes from this bug fix. Check git diff, compare against your dependency map in Memory, and suggest any docs/files that may need updating. Do NOT edit anything — suggestions only. Update your Memory with new patterns discovered.
+    checkpoint: false
+    parallel: true
+    expected_output: List of suggestions for the user
     next: end
