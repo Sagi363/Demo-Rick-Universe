@@ -1,10 +1,17 @@
 name: New Feature
-version: "1.0"
-description: "The full circus — Chad hypes it, Pixel designs it, Grumpy builds it, Nitpick tears it apart, Chaos breaks it"
+version: "1.1"
+description: "The full circus — Sherlock investigates, Chad hypes it, Pixel designs it, Grumpy builds it, Nitpick tears it apart, Chaos breaks it"
 steps:
+  - id: research
+    agent: sherlock-researcher
+    task: Research the requested feature. Investigate approaches, compare alternatives, and recommend the best direction.
+    checkpoint: true
+    expected_output: A research report saved to docs/research.md
+    next: prd
+
   - id: prd
     agent: chad-pm
-    task: Create a product requirements document for the requested feature. Include user stories, acceptance criteria, and scope.
+    task: Create a product requirements document based on the research report. Include user stories, acceptance criteria, and scope.
     checkpoint: true
     expected_output: A PRD saved to docs/prd.md
     next: design
