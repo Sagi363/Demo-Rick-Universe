@@ -320,11 +320,13 @@ pre .prompt { animation: pulse 2s ease-in-out infinite; }
   <div class="bullet"><span class="kw">soul.md</span> &mdash; Who the agent IS</div>
   <div class="bullet"><span class="kw">rules.md</span> &mdash; What the agent MUST NOT do</div>
   <div class="bullet"><span class="kw">tools.md</span> &mdash; What the agent CAN use</div>
-  <div class="bullet no-arrow" style="margin-top:8px; color:#6b6b8d; font-size:18px;">Three files. Human-readable, git-diffable, reviewable.</div>
+  <div class="bullet"><span class="kw">Memory.md</span> &mdash; What the agent HAS LEARNED</div>
+  <div class="bullet no-arrow" style="margin-top:8px; color:#6b6b8d; font-size:18px;">Four files. Human-readable, git-diffable, reviewable. Memory accumulates over time.</div>
   <pre><span class="path">agents/pm/</span>
   <span class="cmd">soul.md</span>      <span class="comment"># Personality &amp; expertise</span>
   <span class="cmd">rules.md</span>     <span class="comment"># Constraints</span>
-  <span class="cmd">tools.md</span>     <span class="comment"># Permissions</span></pre>
+  <span class="cmd">tools.md</span>     <span class="comment"># Permissions</span>
+  <span class="cmd">Memory.md</span>    <span class="comment"># Persistent learnings</span></pre>
 </div>
 </div>
 </div>
@@ -386,6 +388,10 @@ pre .prompt { animation: pulse 2s ease-in-out infinite; }
       <span class="name">Chaos <span class="muted">(QA)</span></span>
       <span class="role">Finds the edge case you swore was impossible.</span>
     </div>
+    <div class="agent-card">
+      <span class="name">Nag <span class="muted">(Advisor)</span></span>
+      <span class="role">Remembers what you changed and what you forgot to update.</span>
+    </div>
   </div>
 </div>
 </div>
@@ -397,7 +403,7 @@ pre .prompt { animation: pulse 2s ease-in-out infinite; }
 <div class="title-bar"><div class="dots"><div class="dot close"></div><div class="dot minimize"></div><div class="dot maximize"></div></div></div>
 <div class="content">
   <h1>This Presentation Was Built by Rick</h1>
-  <div class="bullet no-arrow" style="font-size: 18px; color: #6b6b8d; margin-bottom: 16px;">6 agents collaborated to create what you're looking at right now:</div>
+  <div class="bullet no-arrow" style="font-size: 18px; color: #6b6b8d; margin-bottom: 16px;">7 agents collaborated to create what you're looking at right now:</div>
   <div style="display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; font-size: 17px; line-height: 1.6;">
     <span class="kw">Sherlock</span><span>Researched the codebase and planned 10 slide topics</span>
     <span class="kw">Pixel</span><span>Designed the terminal visual system and CSS spec</span>
@@ -405,6 +411,7 @@ pre .prompt { animation: pulse 2s ease-in-out infinite; }
     <span class="kw">Grumpy</span><span>Built the entire HTML file <span class="muted">(while complaining)</span></span>
     <span class="kw">Nitpick</span><span>Reviewed the code and fixed border-radius + layout issues</span>
     <span class="kw">Chaos</span><span>Stress-tested navigation, scaling, and edge cases</span>
+    <span class="kw">Nag</span><span>Flagged 8 stale docs after the build <span class="muted">(you're welcome)</span></span>
   </div>
   <div style="margin-top: 20px; padding: 16px 20px; background: #141425; border-radius: 8px; font-size: 16px;">
     <span class="muted">Sherlock + Pixel ran in parallel</span> &#x2500;&#x25B8; <span class="muted">Chad used their output</span> &#x2500;&#x25B8; <span class="muted">Grumpy built it</span> &#x2500;&#x25B8; <span class="muted">Nitpick + Chaos reviewed in parallel</span>
@@ -474,7 +481,7 @@ pre .prompt { animation: pulse 2s ease-in-out infinite; }
     -u git@github.com:Sagi363/Demo-Rick-Universe.git</span></pre>
   <div style="margin-top: 28px;">
     <div class="bullet">Install + join Demo Universe in <span class="kw">one command</span></div>
-    <div class="bullet">6 agents, 3 workflows, zero config</div>
+    <div class="bullet">7 agents, 3 workflows, zero config</div>
     <div class="bullet"><span class="accent">/rick introduce me to the team</span></div>
   </div>
 </div>

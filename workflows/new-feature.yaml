@@ -42,4 +42,12 @@ steps:
     task: Create a test plan and attempt to break the implementation. Document all findings.
     checkpoint: true
     expected_output: Test plan and bug report saved to docs/test-report.md
+    next: nag
+
+  - id: nag
+    agent: nag-advisor
+    task: Scan recent changes from this workflow. Check git diff, compare against your dependency map in Memory, and suggest any docs/files that may need updating. Do NOT edit anything — suggestions only. Update your Memory with new patterns discovered.
+    checkpoint: false
+    parallel: true
+    expected_output: List of suggestions for the user
     next: end

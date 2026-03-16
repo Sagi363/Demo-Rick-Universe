@@ -7,4 +7,12 @@ steps:
     task: Review the code changes in the current project. Check for quality, security, naming conventions, test coverage, and anything else worth nitpicking.
     checkpoint: true
     expected_output: Detailed code review with categorized findings
+    next: nag
+
+  - id: nag
+    agent: nag-advisor
+    task: Scan recent changes from this review. Check git diff, compare against your dependency map in Memory, and suggest any docs/files that may need updating. Do NOT edit anything — suggestions only. Update your Memory with new patterns discovered.
+    checkpoint: false
+    parallel: true
+    expected_output: List of suggestions for the user
     next: end

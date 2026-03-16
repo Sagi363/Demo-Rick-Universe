@@ -16,14 +16,15 @@ A demo Universe for [Rick](https://github.com/Sagi363/rick-POC) — meet the tea
 | **Grumpy** | Developer | Writes excellent code while complaining the entire time. His comments are cries for help. |
 | **Nitpick** | Reviewer | Has never approved a PR on first pass. Strong opinions about trailing commas. |
 | **Chaos** | QA | Pastes War and Peace into input fields. Finds bugs that shouldn't exist in this dimension. |
+| **Nag** | Advisor | Remembers everything you changed and everything you forgot to update. Your conscience. |
 
 ## Workflows
 
 | Workflow | Steps | Description |
 |----------|-------|-------------|
-| **new-feature** | Sherlock → Chad → Pixel → Grumpy → Nitpick → Chaos | The full circus |
-| **bug-fix** | Chaos → Grumpy → Nitpick | Find it, fix it, nitpick it |
-| **code-review** | Nitpick | You asked for this |
+| **new-feature** | Sherlock → Chad → Pixel → Grumpy → Nitpick → Chaos → *Nag* | The full circus (Nag runs in background) |
+| **bug-fix** | Chaos → Grumpy → Nitpick → *Nag* | Find it, fix it, nitpick it (Nag runs in background) |
+| **code-review** | Nitpick → *Nag* | You asked for this (Nag runs in background) |
 
 ## Quick Start
 
